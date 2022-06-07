@@ -3,6 +3,8 @@ import App from "./App.vue";
 import vuetify from "./plugins/vuetify";
 import router from "./router";
 
+import VueCompositionAPI from "@vue/composition-api";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -18,6 +20,8 @@ dom.watch();
 Vue.config.productionTip = false;
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
+
+Vue.use(VueCompositionAPI);
 
 new Vue({
   vuetify,
